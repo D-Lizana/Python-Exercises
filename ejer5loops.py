@@ -12,4 +12,4 @@ while numero >= 0:
         sumador+=numero
         contador+=1
 
-print(f"Media: {sumador/contador}")
+print(f"Media = {sumador/contador}")
