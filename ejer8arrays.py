@@ -1,0 +1,2 @@
+# 3. Hacer un programa que cree un array de 10 posiciones de números aleatorios entre 1 y 100.
+#  Posteriormente se pedirá por teclado una posición y se mostrara en pantalla que valor tiene esa posición. (L1)
