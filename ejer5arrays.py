@@ -12,6 +12,6 @@ for i in range(10):
     array[i] = array[i]*numero
     sumador+=array[i]
 
-media = sumador/array.len()
+media = sumador/len(array)
 
 print(media)
