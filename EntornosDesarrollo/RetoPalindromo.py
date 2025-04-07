@@ -1,4 +1,4 @@
-frase = input("Introduce una frase: ")
+frase = input("Introduce una frase: ").lower().replace(" ","")
 palindromo = True
 
 for i in range(len(frase)//2):
