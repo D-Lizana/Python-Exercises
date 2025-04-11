@@ -25,7 +25,8 @@ class Libro:
 
     #Para poder mostrar libros cuando estén en la biblioteca
     def mostrarLibro(self):
-        info = f"isbn : {self.isbn}, titulo : {self.titulo}, año de publicacion : {self.anno_publicacion}, autores : {self.autores}, estado : {self.estado}"
+        nombreAutores = [autor.nombre for autor in self.autores]
+        info = f"isbn : {self.isbn}, titulo : {self.titulo}, año de publicacion : {self.anno_publicacion}, autores : {nombreAutores}, estado : {self.estado}"
         return info
     
 
@@ -40,7 +41,7 @@ class Autor:
     def agregarLibros(self, libro):
         if libro not in self.libros:
             self.libros.append(libro)
-
+            
 
 class Biblioteca:
     def __init__(self, nombre, direccion):
@@ -64,16 +65,22 @@ class Biblioteca:
 def main():
 
     libro1 = Libro("978-0-14-118253-7", "Lolita", 1955)
-    libro1.agregarAutor("Vladimir Nabokov")
-        
     autor1 = Autor("Vladimir Nabokov","Ruso-Estadounidense")
+
+    libro1.agregarAutor(autor1)
+    autor1.agregarLibros(libro1)
 
     biblioteca1 = Biblioteca("Torrente Ballester","Garrido, Salamanca")
 
     biblioteca1.agregarLibro(libro1)
-    
+
     biblioteca1.mostrarListaLibros()
+
+    libro1.prestarLibro()
+    libro1.devolverLibro()
+
+if __name__ == "__main__":
+    main()
     
 
     
-
