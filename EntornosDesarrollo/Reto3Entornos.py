@@ -23,7 +23,10 @@ try:
             solucion = True
         else:
             print("Resultado incorrecto.")
-
+            if resultado < (numero1+numero2):
+                print("Te has quedado corto.")
+            elif resultado > (numero1+numero2):
+                print("Te has pasado.")
 
 except ValueError:
     print("Número no válido")
