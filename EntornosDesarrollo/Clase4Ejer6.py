@@ -12,13 +12,15 @@ def cuadrado(numero):
     return numero*numero
 
 def modificar(mensaje):
-    return "Tira de aquella"
+    return input("Modifica el mensaje: ")
     
 def main():
     numero = int(input("Introduce un número: "))
     print(cuadrado(numero))
     mensaje_global = "Tira de esta"
-    print(modificar(mensaje_global))
+
+    mensaje_global = modificar(mensaje_global)
+    print(mensaje_global)
 
 
 main()
