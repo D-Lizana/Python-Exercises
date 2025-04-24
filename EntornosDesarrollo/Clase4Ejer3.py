@@ -13,6 +13,7 @@ nota = int(input("Introduce un número del 1 al 10: "))
 
 if nota<0 or nota>10:
     print("La nota no es válida")
+    # tambien se puede usar raise ValueError y cazarlo con el except
 elif nota<5:
     print("Suspenso")
 elif nota>=5 and nota<=6:
