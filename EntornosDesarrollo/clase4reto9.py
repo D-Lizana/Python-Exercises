@@ -22,4 +22,4 @@ except IndexError:
     print("La lista no tiene tantos valores.")
 
 finally:
-    print("La operación ha finalizado.")
+    print("Fin del bloque try/except.")
