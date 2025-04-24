@@ -6,3 +6,19 @@
 # modifique.
 # 3.Muestra por pantalla el resultado de la función cuadrado y el valor de la variable global
 # tras la modificación.
+
+
+def cuadrado(numero):
+    return numero*numero
+
+def modificar(mensaje):
+    return "Tira de aquella"
+    
+def main():
+    numero = int(input("Introduce un número: "))
+    print(cuadrado(numero))
+    mensaje_global = "Tira de esta"
+    print(modificar(mensaje_global))
+
+
+main()
