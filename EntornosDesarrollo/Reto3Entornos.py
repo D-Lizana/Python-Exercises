@@ -33,4 +33,3 @@ except ValueError:
 
 finally:
     print("Operacion terminada.")
-
