@@ -6,4 +6,18 @@ def ejercicio1():
     habitantes = float(habitantes /1000)
     print(f"Esto equivale a {habitantes} mil habitantes")
 
-    
+def ejercicio2():
+    capital = int(input("Introduce capital inicial: "))
+    tasa = int(input("Introduce tasa de interés anual: "))
+    tiempo = int(input("Introduce el número de años: "))
+
+    if capital<0 or tasa<0 or tiempo<0:
+        print("Los valores no pueden ser negativos.")
+
+    else:
+        interes = float(capital*(tasa/100)*tiempo)
+        print(f"El interés simple es: {interes}")
+
+        total = capital + interes
+
+        print(f"El monto total acumulado es {total}.")
