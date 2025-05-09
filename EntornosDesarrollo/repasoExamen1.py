@@ -63,7 +63,8 @@ def ejercicio5():
 
     print("Acesso concedido.")
 
-
+def ejercicio6():
+    
 
 
 
