@@ -49,6 +49,19 @@ def ejercicio4():
     print(f"El total de letras es {sumador}")
 
 
+def ejercicio5():
+    password = "python123"
+    correcto = False
+
+    while correcto==False:
+        solicitud = input("Introduce contraseña: ")
+        if solicitud==password:
+            print("Contraseña correcta.")
+            correcto = True
+        else:
+            print("Contraseña incorrecta.")
+
+    print("Acesso concedido.")
 
 
 
