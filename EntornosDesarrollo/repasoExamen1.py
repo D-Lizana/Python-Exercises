@@ -6,6 +6,7 @@ def ejercicio1():
     habitantes = float(habitantes /1000)
     print(f"Esto equivale a {habitantes} mil habitantes")
 
+
 def ejercicio2():
     capital = int(input("Introduce capital inicial: "))
     tasa = int(input("Introduce tasa de interés anual: "))
@@ -21,3 +22,16 @@ def ejercicio2():
         total = capital + interes
 
         print(f"El monto total acumulado es {total}.")
+
+
+def ejercicio3():
+    edad = int(input("Introduce edad: "))
+    if edad <12:
+        print("Niñez.")
+    elif edad>=12 and edad<=17:
+        print("Adolescencia.")
+    elif edad>=18 and edad<=64:
+        print("Adultez")
+    else:
+        print("Tercera edad.")
+
