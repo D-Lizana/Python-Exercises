@@ -35,3 +35,25 @@ def ejercicio3():
     else:
         print("Tercera edad.")
 
+
+def ejercicio4():
+
+    animales = ["perro","gato","elefante","jirafa","tigre","conejo"]
+    sumador = 0
+
+    for i in range(len(animales)):
+        print(f"{i+1}. {animales[i]}")
+        for j in range(len(animales[i])):
+            sumador += 1
+
+    print(f"El total de letras es {sumador}")
+
+
+
+
+
+
+def main():
+    x = 0
+
+main()
