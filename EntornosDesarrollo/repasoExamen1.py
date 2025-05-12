@@ -64,11 +64,28 @@ def ejercicio5():
     print("Acesso concedido.")
 
 def ejercicio6():
-    
+    numero1 = int(input("Introduce numero 1: "))
+    numero2 = int(input("Introduce numero 2: "))
 
+    try:
+        resultado = numero1 / numero2
+        print(f"{resultado}")
+        if resultado == 1:
+            raise Exception
+        
 
+    except (ZeroDivisionError):
+        print("No se puede dividir entre 0")
+    except (Exception):
+        print("Tira de esta")
+
+def ejercicio7():
+    funcionLambda = lambda x: x*10
+    lista = [1,2,3,4,5]
+    listax10 = list(map(funcionLambda, lista))
+    print(listax10)
 
 def main():
-    x = 0
+   ejercicio7()
 
 main()

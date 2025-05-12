@@ -1,6 +1,5 @@
 
 class Empleado:
-
     # Constructor
     def __init__(self, id_empleado, nombre, salario):
         self.id_empleado = id_empleado
