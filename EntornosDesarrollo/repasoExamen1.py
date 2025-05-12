@@ -85,7 +85,11 @@ def ejercicio7():
     listax10 = list(map(funcionLambda, lista))
     print(listax10)
 
+def ejercicio8():
+    f = lambda a,b: a*b
+    print(f(3,4))
+
 def main():
-   ejercicio7()
+   ejercicio8()
 
 main()
