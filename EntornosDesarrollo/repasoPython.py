@@ -70,7 +70,16 @@ def ejercicio6():
     print(f"{cuadrado(2)}, {modificar()}")
 
 
+def ejercicio7():
+    funcion = lambda x: x*10
+    numeros = [1,2,3,4,5]
+    nueva_lista = list(map(funcion, numeros))
+
+    print(nueva_lista)
+
+
+
 def main():
-    ejercicio6()
+    ejercicio7()
 
 main()
