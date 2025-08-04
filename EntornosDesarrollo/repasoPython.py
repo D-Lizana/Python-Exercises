@@ -33,3 +33,12 @@ def ejercicio3():
         else:
             print("Sobresaliente.")
 
+
+def ejercicio4():
+    numeros = [1,2,3,4,5]
+    suma = 0
+
+    for i in len(numeros-1):
+        suma += i
+
+    print(suma)
