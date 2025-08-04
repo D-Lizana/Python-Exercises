@@ -42,3 +42,20 @@ def ejercicio4():
         suma += i
 
     print(suma)
+
+
+def ejercicio5():
+
+    numero = 0
+    numeros = []
+
+    while numero >= 0:
+        numero = int(input("Introduce número: "))
+        numeros.append(numero)
+
+    print(numeros)
+
+def main():
+    ejercicio5()
+
+main()
