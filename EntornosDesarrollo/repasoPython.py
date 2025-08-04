@@ -5,6 +5,7 @@ def ejercicio1():
     print(f"La ciudad de {ciudad} tiene {numero} habitantes.")
     print(f"Esto equivale a {numero/1000} mil habitantes.")
 
+
 def ejercicio2():
     numero1 = int(input("Introduce un numero: "))
     numero2 = int(input("Introduce otro numero: "))
@@ -12,6 +13,23 @@ def ejercicio2():
     try: 
         resultado = numero1 / numero2
         print(resultado)
-        
+
     except ZeroDivisionError:
         print("No se puedee dividir entre 0")
+
+
+def ejercicio3():
+    nota = int(input("Introduce una nota entre 0 y 10: "))
+
+    if nota < 0 or nota > 10:
+        print("Nota no válida.")
+    else:
+        if nota < 5:
+            print("Suspenso.")
+        elif nota > 5 and nota <= 6:
+            print("Aprobado.")
+        elif nota >=7 and nota <=8:
+            print("Notable.")
+        else:
+            print("Sobresaliente.")
+
