@@ -78,6 +78,18 @@ def ejercicio7():
     print(nueva_lista)
 
 
+def ejercicio8():
+
+    try:
+        numero = int(input("Introduce un número: "))
+        resultado = 10/numero
+    except ValueError:
+        print("Número no válido.")
+    except ZeroDivisionError:
+        print("No se puede dividir entre 0.")
+    finally:
+        print("Se acabó.")
+
 
 def main():
     ejercicio7()
