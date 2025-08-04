@@ -1,0 +1,2 @@
+def ejercicio1():
+    
