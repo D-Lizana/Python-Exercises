@@ -55,7 +55,22 @@ def ejercicio5():
 
     print(numeros)
 
+
+mensaje_global = ""
+def ejercicio6():
+
+    def cuadrado(numero):
+        return numero*numero
+
+    def modificar():
+        global mensaje_global
+        mensaje_global = "Adios"
+        return mensaje_global
+
+    print(f"{cuadrado(2)}, {modificar()}")
+
+
 def main():
-    ejercicio5()
+    ejercicio6()
 
 main()
