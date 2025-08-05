@@ -83,6 +83,8 @@ def ejercicio8():
     try:
         numero = int(input("Introduce un número: "))
         resultado = 10/numero
+        print(resultado)
+        
     except ValueError:
         print("Número no válido.")
     except ZeroDivisionError:
